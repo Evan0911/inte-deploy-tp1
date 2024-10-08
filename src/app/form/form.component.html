@@ -1,0 +1,9 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <input type="text" formControlName="lastName" placeholder="Last Name">
+  <input type="text" formControlName="firstName" placeholder="First Name">
+  <input type="email" formControlName="email" placeholder="Email">
+  <input type="text" formControlName="birthDate" placeholder="Birth Date">
+  <input type="text" formControlName="city" placeholder="City">
+  <input type="text" formControlName="postalCode" placeholder="Postal Code">
+  <button type="submit" [disabled]="isConfirmClickable">Confirm</button>
+</form>
