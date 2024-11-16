@@ -1,6 +1,6 @@
 {
-  "name": "front",
-  "version": "0.0.0",
+  "name": "evanl-inte-deploy-tp1",
+  "version": "0.1.0",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "ng": "ng",
@@ -10,9 +10,9 @@
     "test": "ng test",
     "test:ci": "ng test --browsers=ChromeHeadlessCI --watch=false --no-progress",
     "predeploy": "ng build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "ng deploy --base-href=/inte-deploy-tp1/ --no-nojekyll --dir=dist/front --email=evan.lefevre108@gmail.com --name=\"Evan0911\""
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "^17.3.12",
     "@angular/common": "^17.3.12",
@@ -22,6 +22,7 @@
     "@angular/platform-browser": "^17.3.12",
     "@angular/platform-browser-dynamic": "^17.3.12",
     "@angular/router": "^17.3.12",
+    "angular-cli-ghpages": "^2.0.3",
     "ngx-toastr": "^19.0.0",
     "puppeteer": "^23.8.0",
     "rxjs": "~7.8.0",
@@ -41,5 +42,8 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "typescript": "~5.4.5"
+  },
+  "repository": {
+    "url": "https://github.com/Evan0911/inte-deploy-tp1"
   }
 }
